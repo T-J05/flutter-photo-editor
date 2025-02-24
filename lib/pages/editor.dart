@@ -51,7 +51,7 @@ class _MyWidgetState extends State<MyWidget> {
       if (imageBytes != null) {
         final result = await ImageGallerySaver.saveImage(imageBytes);
 
-        if (!mounted) return; // Evita el uso de context si el widget fue desmontado
+        if (!mounted) return;
 
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
